@@ -1,0 +1,17 @@
+[package]
+name = "des-usage"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+lto = true
+opt-level = 3
+codegen-units = 1
+strip = true
+
+[dependencies]
+anyhow = "1.0"
+cipher = "0.4"
+des = "0.8"
+inquire = "0.5"
+const_format = "0.2"
